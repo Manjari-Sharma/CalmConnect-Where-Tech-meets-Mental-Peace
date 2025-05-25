@@ -30,15 +30,18 @@ git clone https://github.com/Manjari-Sharma/CalmConnect-Where-Tech-meets-Mental-
 cd CalmConnect-Where-Tech-meets-Mental-Peace
 
 
-### 2. Open index.html in any browser
+### 2. Open `index.html` in any browser
+
 ```bash
 start index.html  # On Windows
 open index.html   # On Mac
 
-🌐 Live Demo
+
+
+### 🌐 Live Demo
 [Click here to chat with CalmConnect](https://manjari-sharma.github.io/CalmConnect-Where-Tech-meets-Mental-Peace/)
 
-🤝 Contributing
+### 🤝 Contributing
 While this is a personal/academic project, contributions are welcome for:
 
 UI enhancements
