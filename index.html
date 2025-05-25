@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mental Health Chatbot</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="include.js" defer></script>
+</head>
+<body>
+    <div id="header"></div>
+    
+
+    <!-- Registration Section -->
+  <div id="registrationSection">
+    <h2>Welcome to CALM CONNECT!</h2>
+    <p style="font-size: 20px">Please register to start chatting with our AI mental health assistant.</p>
+    <a href="https://form.jotform.com/251263142934453" target="_blank" class="register-btn" onclick="enableChat()">Register Now</a>
+  </div>
+
+  <!-- Chatbot Section (Initially Hidden) -->
+  <div id="chatbotSection" style="display: none;">
+    <h3>CALM CONNECT : An AI Chatbot</h3>
+    <div class="chatbot" id="chatbotContainer"></div>
+  </div>
+
+  <script>
+    function enableChat() {
+      // Delay to simulate user registration
+      setTimeout(() => {
+        alert("Thank you for registering! Chat is now enabled.");
+        document.getElementById("registrationSection").style.display = "none";
+        document.getElementById("chatbotSection").style.display = "block";
+
+        // Dynamically inject chatbot script
+        const script = document.createElement("script");
+        script.src = "https://cdn.jotfor.ms/s/umd/latest/for-embedded-agent.js";
+        script.onload = function () {
+          window.AgentInitializer.init({
+            rootId: "JotformAgent-0196aa00760170088d6a83a0021be38bc073",
+            formID: "0196aa00760170088d6a83a0021be38bc073",
+            queryParams: ["skipWelcome=1", "maximizable=1"],
+            domain: "https://www.jotform.com",
+            isInitialOpen: false,
+            isDraggable: false,
+            background: "linear-gradient(180deg, #3A5800 0%, #3A5800 100%)",
+            buttonBackgroundColor: "#004BB6",
+            buttonIconColor: "#F8FEEC",
+            variant: false,
+            customizations: {
+              greeting: "Yes",
+              greetingMessage: "Hi there! How can I assist you?",
+              pulse: "Yes",
+              position: "right"
+            }
+          });
+        };
+        document.getElementById("chatbotContainer").appendChild(script);
+      }, 1000);
+    }
+  </script>
+  
+<div id="footer"></div>
+</body>
+</html>
