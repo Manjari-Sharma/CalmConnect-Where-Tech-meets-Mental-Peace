@@ -22,14 +22,4 @@
 
 ---
 
-## 🚀 Getting Started
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/Manjari-Sharma/CalmConnect-Where-Tech-meets-Mental-Peace.git
-cd CalmConnect-Where-Tech-meets-Mental-Peace
-
-### 2. Open index.html in any browser
-```bash
-start index.html    # For Windows
-open index.html     # For Mac
+[Live Demo](https://manjari-sharma.github.io/CalmConnect-Where-Tech-meets-Mental-Peace/)
