@@ -28,22 +28,3 @@
 ```bash
 git clone https://github.com/Manjari-Sharma/CalmConnect-Where-Tech-meets-Mental-Peace.git
 cd CalmConnect-Where-Tech-meets-Mental-Peace
-
----
-
-start index.html  # On Windows
-open index.html   # On Mac
-
----
-
-### 🌐 Live Demo
-[Click here to chat with CalmConnect](https://manjari-sharma.github.io/CalmConnect-Where-Tech-meets-Mental-Peace/)
-
----
-
-## 🤝 Contributing
-While this is a personal/academic project, contributions are welcome for:
-
-UI enhancements
-Better mental health prompts
-Accessibility improvements
